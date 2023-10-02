@@ -4,6 +4,7 @@
 
 body {
     height: 4000px;
+    font-family: 'Montserrat';
 }
 
 section.shading {
@@ -18,7 +19,7 @@ section.shading {
 div.form {
     display: flex;
     border-radius: 12px;
-    background: var(--grey-bg, #F5F5FA);
+    background: #F5F5FA;
     box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.50);
     width: 650px;
     position: fixed;
@@ -48,7 +49,7 @@ div.title {
     align-self: stretch;
 }
 
-img {
+button.close {
     position: absolute;
     right: 0;
     width: 32px;
@@ -56,19 +57,19 @@ img {
 
 }
 
-input {
+input,textarea {
     border-radius: 8px;
-    border: 1px solid var(--basic-white, #FFF);
-    background: var(--basic-white, #FFF);
+    border: 1px solid #FFF;
+    background: #FFF;
     display: flex;
     padding: 15px;
     align-items: flex-start;
     gap: 10px;
-align-self: stretch;
+    align-self: stretch;
 }
 
 input::placeholder {
-    color: var(--grey-text, #B3B3BA);
+    color: #B3B3BA;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -77,18 +78,18 @@ input::placeholder {
     
 }
 
-input.message::placeholder {
+textarea.message::placeholder {
     position:absolute;
     top: 15px;
 } 
 
-div.title h1 {
+div.title h2 {
     font-family: Montserrat;
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -116,8 +117,8 @@ div.part1, div.part2  {
     align-self: stretch;
 }
 
-h2 {
-    color: var(--grey-text, #B3B3BA);
+h3 {
+    color: #B3B3BA;
 font-family: Montserrat;
 font-size: 14px;
 font-weight: 700;
@@ -133,13 +134,13 @@ div.button {
     align-self: stretch;
 }
 
-button {
+button.send {
     width: 100%;
     border-radius: 12px;
-    background: var(--active-regular, #24A3FF);
+    background: #24A3FF;
     box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
     padding: 18px 30px;
-    color: var(--basic-white, #FFF);
+    color: #FFF;
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
