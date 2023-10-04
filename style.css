@@ -4,8 +4,17 @@
 
 body {
     height: 4000px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat",sans-serif;
 }
+
+section {
+    height: 4000px;
+}
+
+button {
+    cursor: pointer;
+}
+
 
 div.shading {
     background: rgba(50, 50, 100, 0.7);
@@ -25,7 +34,6 @@ div.form {
     position: fixed;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%);
     z-index: 10; 
 }
@@ -59,9 +67,6 @@ button.close {
     background: #F5F5FA;
 
 }
-img {
-
-}
 
 input,textarea {
     border-radius: 8px;
@@ -72,6 +77,7 @@ input,textarea {
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
+    font-family: 'Montserrat';
 }
 
 input::placeholder {
@@ -90,13 +96,15 @@ textarea.message::placeholder {
     color: #B3B3BA;
     font-family: Montserrat;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
 } 
 
+textarea {
+    resize: none;
+}
+
 div.title h2 {
-    font-family: Montserrat;
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
