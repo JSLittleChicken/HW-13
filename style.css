@@ -132,14 +132,6 @@ h3 {
     text-transform: uppercase;
 }
 
-div.button {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-}
-
 button.send {
     width: 100%;
     border-radius: 12px;
@@ -151,4 +143,5 @@ button.send {
     font-size: 16px;
     font-weight: 700;
     border: none;
+    align-self: stretch;
 }
